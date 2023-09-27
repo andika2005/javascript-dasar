@@ -54,7 +54,7 @@ const mobil = {
     color : 'merah',
     kecepatan : '120km/h',
     start : function(){
-        alert('mobil' + mobil.type+ 'melaju dengan' +mobil.kecepatan)
+        // alert('mobil' + mobil.type+ 'melaju dengan' +mobil.kecepatan)
     }
 }
 
