@@ -33,14 +33,22 @@ function button(){
     const ul = document.getElementById('ul');
 
     const buah = ["apel", "jeruk", "mangga", "pisang", "duren", "sirsak", "jambu"]
+    const nomor = [1, 2, 3, 4, 5, 6, 7, 8]
 
+    //ini pengkondisian
     if(id == 'test' && pw == 'test123'){
         //ini looping nya
         buah.forEach(function (nilai){
             const li = document.createElement('li');
             ul.appendChild(li);
             li.appendChild(document.createTextNode('ini buah'+ ' '+ nilai));
-        });     
+        });
+
+        nomor.forEach(function (nilai2){
+              let li = document.createElement('li');
+              ul.appendChild(li);
+              li.appendChild(document.createTextNode('test nomor'+ ' ' + nilai2))
+        });
     }
     else{
         document.getElementById('p').textContent = 'salah woi';
