@@ -34,8 +34,8 @@ function button(){
 
     const buah = ["apel", "jeruk", "mangga", "pisang", "duren", "sirsak", "jambu"]
 
-    //ini looping nya
     if(id == 'test' && pw == 'test123'){
+        //ini looping nya
         buah.forEach(function (nilai){
             const li = document.createElement('li');
             ul.appendChild(li);
