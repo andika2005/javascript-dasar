@@ -64,7 +64,8 @@ button2 = document.getElementById('button2');
 const sekolah = ['bangku','meja', 'papantulis', 'spidol', 'jendela']
 
 button2.addEventListener('click', function(){
-     document.writeln(sekolah[1]);
+    document.getElementById('input2').value = sekolah[0];
+    //  document.writeln(sekolah[1]);
 });
 
 //object
@@ -78,3 +79,21 @@ const mobil = {
 }
 
 mobil.start()
+
+// kalkulator
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
+
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+}
+
+function calculateResult() {
+    try {
+        var result = eval(document.getElementById('display').value);
+        document.getElementById('display').value = result;
+    } catch (error) {
+        document.getElementById('display').value = 'Error';
+    }
+}
