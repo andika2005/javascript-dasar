@@ -31,30 +31,41 @@ function button(){
     const id = document.getElementById('id').value;
     const pw = document.getElementById('password').value;
     const ul = document.getElementById('ul');
+    const test = document.getElementById('test');
 
     const buah = ["apel", "jeruk", "mangga", "pisang", "duren", "sirsak", "jambu"]
     const nomor = [1, 2, 3, 4, 5, 6, 7, 8]
 
     //ini pengkondisian
-    if(id == 'test' && pw == 'test123'){
+    if(id == 'buah' && pw == 'buah123'){
         //ini looping nya
         buah.forEach(function (nilai){
             const li = document.createElement('li');
             ul.appendChild(li);
             li.appendChild(document.createTextNode('ini buah'+ ' '+ nilai));
         });
+    }
 
+    else if (id =='nomor' && pw == 'nomor123'){
         nomor.forEach(function (nilai2){
-              let li = document.createElement('li');
-              ul.appendChild(li);
-              li.appendChild(document.createTextNode('test nomor'+ ' ' + nilai2))
-        });
+            let li = document.createElement('li');
+            ul.appendChild(li);
+            li.appendChild(document.createTextNode('test nomor'+ ' ' + nilai2))
+      });
     }
     else{
         document.getElementById('p').textContent = 'salah woi';
     }
 
 }
+
+object = document.getElementById('object');
+button2 = document.getElementById('button2');
+const sekolah = ['bangku','meja', 'papantulis', 'spidol', 'jendela']
+
+button2.addEventListener('click', function(){
+     document.writeln(sekolah[1]);
+});
 
 //object
 const mobil = {
